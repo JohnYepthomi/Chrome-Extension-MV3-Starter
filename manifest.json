@@ -1,0 +1,51 @@
+{
+  "name": "Schedule Appointments Script",
+  "description": "Schedule Appointments Script",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "background",
+    "scripting",
+    "webNavigation",
+    "tabs",
+    "unlimitedStorage",
+    "contentSettings",
+    "webNavigation",
+    "cookies",
+    "downloads"
+  ],
+  "action": {
+    "default_icon": {
+      "48": "/icons/48.png",
+      "128": "/icons/128.png"
+    }
+  },
+  "host_permissions": [
+    "https://www.gstatic.com/*",
+    "https://www.facebook.com/*",
+    "https://visa.vfsglobal.com/*",
+    "https://online.vfsglobal.dz/Global-Appointment/?q=shSA0YnE4pLF9Xzwon%2Fx%2FBGxVUxGuaZP3eMAtGHiEL2OHa0cghQbd9qtRdrxxlTqHtyTC50R3nNcergVei5DDQ%3D%3D",
+    "https://online.vfsglobal.dz/Global-Appointment/*",
+    "https://www.google.com/*",
+    "https://www.google.co.in/*",
+    "https://doubleclick.net/*",
+    "https://vfsglobal.com/*",
+    "https://.vfsglobal.dz/*"
+  ],
+  "icons": {
+    "48": "/icons/48.png",
+    "128": "/icons/128.png"
+  },
+  "options_page": "popup.html" // Normally, should be options.html but open popup instead.
+}
+
+
+
+    // "https://online.vfsglobal.dz/Global-Appointment/?q=shSA0YnE4pLF9Xzwon%2Fx%2FBGxVUxGuaZP3eMAtGHiEL2OHa0cghQbd9qtRdrxxlTqHtyTC50R3nNcergVei5DDQ%3D%3D"
+    // "https://online.vfsglobal.dz/Global-Appointment/Home/SelectVAC?q=dePiaPfL2MJ7yDPEmQRU6fRZbx3aIpSal6PdG3Bxqq7rSNU6HabciCVot9dEwkhd"
+    // "https://online.vfsglobal.dz/Global-Appointment/Home/SelectVAC"
